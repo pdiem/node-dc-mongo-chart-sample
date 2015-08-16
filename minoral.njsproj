@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b1b595ea-cf71-4f7c-857b-c39174170faa}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="server.js" />
+    <Compile Include="app\routes.js" />
+    <Compile Include="config\db.js" />
+    <Content Include="public\index.html" />
+    <Compile Include="app\models\SubjectViews.js" />
+    <Content Include="public\css\dc.css" />
+    <Content Include="public\css\skel-noscript.css" />
+    <Content Include="public\css\style-1000px.css" />
+    <Content Include="public\css\style-desktop.css" />
+    <Content Include="public\css\style-mobile.css" />
+    <Content Include="public\css\style.css" />
+    <Content Include="public\css\stylenew.css" />
+    <Content Include="public\images\banner.jpg" />
+    <Content Include="public\images\pics02.jpg" />
+    <Compile Include="public\js\crossfilter.js" />
+    <Compile Include="public\js\d3.js" />
+    <Compile Include="public\js\Dashboard.js" />
+    <Compile Include="public\js\dc.js" />
+    <Compile Include="public\js\html5shiv.js" />
+    <Compile Include="public\js\init.js" />
+    <Compile Include="public\js\queue.js" />
+    <Compile Include="public\js\skel-panels.min.js" />
+    <Compile Include="public\js\skel.min.js" />
+    <Content Include="public\css\font\fontawesome-webfont.svg" />
+    <Content Include="public\css\ie\v8.css" />
+    <Content Include="public\css\ie\v9.css" />
+    <Compile Include="public\css\ie\html5shiv.js" />
+    <Content Include="public\css\images\mobileUI-site-nav-opener-bg.svg" />
+    <Content Include="public\css\images\toggle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="app\models" />
+    <Folder Include="config" />
+    <Folder Include="public" />
+    <Folder Include="public\css" />
+    <Folder Include="public\css\font" />
+    <Folder Include="public\css\ie" />
+    <Folder Include="public\css\images" />
+    <Folder Include="public\images" />
+    <Folder Include="public\js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
